@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -44,11 +45,20 @@ public class CourseActivity extends AppCompatActivity {
         course_content = new ArrayList<>();
         course_date = new ArrayList<>();
         displayData();
-        customAdapter = new CustomAdapter(CourseActivity.this, course_id, course_name, course_teacher, course_content, course_date);
+        customAdapter = new CustomAdapter(CourseActivity.this,this, course_id, course_name, course_teacher, course_content, course_date);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(CourseActivity.this));
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==1){
+        recreate();
+        }
+    }
+
     void displayData(){
         Cursor cursor = myDB.readAllData();
         if(cursor.getCount() == 0){
