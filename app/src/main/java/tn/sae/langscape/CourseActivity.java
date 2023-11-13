@@ -9,6 +9,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -27,15 +29,17 @@ public class CourseActivity extends AppCompatActivity {
     MyDatabaseHelper myDB;
     ArrayList<String> course_id, course_name, course_teacher, course_content, course_date;
     CustomAdapter customAdapter;
+    ImageView empty_imageview;
+    TextView no_data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_course);
-
 
         recyclerView = findViewById(R.id.recyclerView);
         add_button = findViewById(R.id.add_button);
+        empty_imageview = findViewById(R.id.empty_imageview);
+        no_data = findViewById(R.id.no_data);
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,7 +71,8 @@ public class CourseActivity extends AppCompatActivity {
     void displayData(){
         Cursor cursor = myDB.readAllData();
         if(cursor.getCount() == 0){
-            Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
+            empty_imageview.setVisibility(View.VISIBLE);
+            no_data.setVisibility(View.VISIBLE);
         }else {
             while (cursor.moveToNext()){
                 course_id.add(cursor.getString(0));
@@ -76,6 +81,9 @@ public class CourseActivity extends AppCompatActivity {
                 course_content.add(cursor.getString(3));
                 course_date.add(cursor.getString(4));
             }
+            empty_imageview.setVisibility(View.GONE);
+            no_data.setVisibility(View.GONE);
+
         }
     }
 
