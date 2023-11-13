@@ -1,0 +1,152 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="416dp"
+        android:layout_height="807dp"
+        android:paddingTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/empty_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_empty"
+        android:alpha="0.1"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="No Data."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_imageview"
+        android:alpha="0.4"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="253dp"
+        android:layout_height="166dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/empty_imageview"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/show" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/text_title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Ajouter un nouveau cours"-->
+<!--        android:textSize="24sp"-->
+<!--        android:minLines="6"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#333333"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_course_name"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Nom du cours"-->
+<!--        android:textSize="18sp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:padding="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/text_title"-->
+<!--        android:layout_margin="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_course_type"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Type de cours"-->
+<!--        android:textSize="18sp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:padding="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_course_name"-->
+<!--        android:layout_margin="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_course_content"-->
+<!--        android:layout_width="365dp"-->
+<!--        android:layout_height="255dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:hint="Contenu du cours"-->
+<!--        android:inputType="textMultiLine"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_course_type" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_course_date"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Date du cours"-->
+<!--        android:textSize="18sp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:padding="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_course_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="false" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/save_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Enregistrer"-->
+<!--        android:background="#009688"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:padding="12dp"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_course_date"-->
+<!--        android:layout_margin="16dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
