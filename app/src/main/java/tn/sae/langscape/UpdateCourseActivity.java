@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class UpdateCourseActivity extends AppCompatActivity {
@@ -25,6 +26,8 @@ public class UpdateCourseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_course);
+        ImageView imageView = findViewById(R.id.my_image_view); // Assurez-vous d'avoir le bon ID pour l'ImageView
+        imageView.setImageResource(R.drawable.up);
 
         name_input = findViewById(R.id.name_input2);
         teacher_input = findViewById(R.id.teacher_input2);

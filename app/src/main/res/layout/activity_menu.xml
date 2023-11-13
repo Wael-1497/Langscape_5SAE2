@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".MenuActivity">
+
+    <!-- Bouton "Course" -->
+
+    <Button
+        android:id="@+id/course_button"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="150dp"
+        android:text="Course"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/test1_button"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="TEST 1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test3_button"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/test2_button"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="TEST 2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test1_button"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/test3_button"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="TEST 3"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test4_button"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/test4_button"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="TEST 4"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_button"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Quatre boutons "Test" -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

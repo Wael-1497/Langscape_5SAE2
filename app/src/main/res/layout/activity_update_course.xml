@@ -4,20 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateCourseActivity"
-    android:padding="30dp">
+    android:padding="30dp"
+    tools:context=".UpdateCourseActivity">
+
+
+    <ImageView
+        android:id="@+id/my_image_view"
+        android:layout_width="361dp"
+        android:layout_height="155dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/name_input2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Course Name"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/my_image_view" />
 
     <EditText
         android:id="@+id/teacher_input2"
@@ -33,8 +45,8 @@
 
     <EditText
         android:id="@+id/content_input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="357dp"
+        android:layout_height="224dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Course Content"
