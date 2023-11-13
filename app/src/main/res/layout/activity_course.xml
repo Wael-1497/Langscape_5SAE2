@@ -68,6 +68,7 @@
         app:srcCompat="@drawable/show" />
 
     <!--    <TextView-->
+<<<<<<< HEAD
     <!--        android:id="@+id/text_title"-->
     <!--        android:layout_width="wrap_content"-->
     <!--        android:layout_height="wrap_content"-->
@@ -148,5 +149,87 @@
     <!--        app:layout_constraintEnd_toEndOf="parent"-->
     <!--        app:layout_constraintTop_toBottomOf="@id/edit_course_date"-->
     <!--        android:layout_margin="16dp" />-->
+=======
+<!--        android:id="@+id/text_title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Ajouter un nouveau cours"-->
+<!--        android:textSize="24sp"-->
+<!--        android:minLines="6"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#333333"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_course_name"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Nom du cours"-->
+<!--        android:textSize="18sp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:padding="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/text_title"-->
+<!--        android:layout_margin="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_course_type"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Type de cours"-->
+<!--        android:textSize="18sp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:padding="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_course_name"-->
+<!--        android:layout_margin="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_course_content"-->
+<!--        android:layout_width="365dp"-->
+<!--        android:layout_height="255dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:hint="Contenu du cours"-->
+<!--        android:inputType="textMultiLine"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_course_type" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_course_date"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Date du cours"-->
+<!--        android:textSize="18sp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:padding="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_course_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="false" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/save_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Enregistrer"-->
+<!--        android:background="#009688"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:padding="12dp"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edit_course_date"-->
+<!--        android:layout_margin="16dp" />-->
+>>>>>>> origin/main
 
 </androidx.constraintlayout.widget.ConstraintLayout>
