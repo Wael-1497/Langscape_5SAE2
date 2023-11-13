@@ -27,6 +27,7 @@ public class AddCourseActivity extends AppCompatActivity {
                         teacher_input.getText().toString().trim(),
                         content_input.getText().toString().trim(),
                         date_input.getText().toString().trim());
+                finish();
             }
         });
     }
