@@ -21,6 +21,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
    private Context context;
    Activity activity;
+
    private ArrayList course_id, course_name, course_teacher, course_content, course_date;
 Animation translate_anim;
 

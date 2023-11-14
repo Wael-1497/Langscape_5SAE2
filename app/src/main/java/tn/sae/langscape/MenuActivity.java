@@ -14,6 +14,8 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         Button courseButton = findViewById(R.id.course_button);
+        Button dictionaryButton = findViewById(R.id.dictionary_button);
+
         courseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,8 +24,14 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-
-
-
+// Computer Terms Dictionary Button
+        dictionaryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Open the Computer Terms Dictionary section
+                Intent intent = new Intent(getApplicationContext(), DictionaryActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
